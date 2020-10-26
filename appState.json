@@ -1,0 +1,130 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "0ffb38f4-53d1-4a65-8b3e-3724b929ade1": {
+        "id": "0ffb38f4-53d1-4a65-8b3e-3724b929ade1",
+        "parent": null,
+        "name": "createds3andapi.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "createds3andapi.js",
+        "cursor": {
+          "lineNumber": 3,
+          "column": 10
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "createds3andapi"
+        },
+        "triggers": [
+          {
+            "resourceName": "apighiruawsacctesttestpathget",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1603703528743,
+        "testCases": {
+          "3ca97c25-66c1-48fe-b0f4-c9f2f16877ea": {
+            "id": "3ca97c25-66c1-48fe-b0f4-c9f2f16877ea",
+            "name": "Test event",
+            "functionId": "0ffb38f4-53d1-4a65-8b3e-3724b929ade1",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "0ffb38f4-53d1-4a65-8b3e-3724b929ade1"
+    ],
+    "currentFileId": "0ffb38f4-53d1-4a65-8b3e-3724b929ade1",
+    "resources": {
+      "apighiruawsacctesttestpathget": {
+        "name": "apighiruawsacctesttestpathget",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 0,
+          "apiName": "hiruawsacctest",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "test/path",
+          "resourcePath": "/test/path",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Test",
+          "mode": 0
+        }
+      },
+      "s3sigmasmoketest": {
+        "name": "s3sigmasmoketest",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "name": "sigma.smoketest"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        },
+        "moment": {
+          "name": "moment",
+          "version": "2.29.1",
+          "dev": false,
+          "language": "nodejs"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.5",
+    "projectName": "createds3andapi",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1603704999770
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "createds3andapi",
+      "url": "https://github.com/HirudineeADRT/createds3andapi"
+    }
+  }
+}
