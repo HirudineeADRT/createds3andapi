@@ -12,7 +12,7 @@
         "filePath": "createds3andapi.js",
         "cursor": {
           "lineNumber": 3,
-          "column": 10
+          "column": 12
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -118,7 +118,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1603704999770
+    "lastSave": 1603709130461
   },
   "VCS_STATE": {
     "provider": "GitHub",
